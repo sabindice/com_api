@@ -34,7 +34,7 @@ class ApiViewKeys extends ApiView {
 
 	public function display($tpl = null) {
 
-		JHTML::stylesheet('com_api.css', 'components/com_api/assets/css/');
+		JFactory::getDocument()->addStyleSheet("components/com_api/assets/css/com_api.css",'text/css');
 
 		if ($this->routeLayout($tpl)) :
 			return;
